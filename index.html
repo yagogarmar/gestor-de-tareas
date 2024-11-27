@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Gestor de Tareas</h1>
+    <form id="taskForm">
+        <input type="text" id="taskInput" placeholder="Nueva tarea" required>
+        <button type="submit">Añadir Tarea</button>
+    </form>
+    <div class="container">
+        <div class="tasks" id="pendingTasks">
+            <h3>Pendientes</h3>
+            <div id="pendingList"></div>
+        </div>
+        <div class="tasks" id="completedTasks">
+            <h3>Hechas</h3>
+            <div id="completedList"></div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
